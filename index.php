@@ -26,8 +26,8 @@
 
   <div class="user">
     <h1>New User?</h1>
-    <a href="studentRegistration.php"><input class="Register" type="button" value="Student Registration" style="margin-right: 10px;"></a>
-    <a href="teacherRegistration.php"><input class="Register" type="button" value="Teacher Registration" style="margin-left: 10px;"></a>
+    <a href="studentRegistration.php"><input class="Register" type="button" value="Student Registration"></a>
+    <a href="teacherRegistration.php"><input class="Register" type="button" value="Teacher Registration"></a>
   </div>
 </body>
 </html>

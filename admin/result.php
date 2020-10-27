@@ -63,7 +63,6 @@
                                 echo "<th>Last_Name</th>";
                                 echo "<th>Email</th>";
                                 echo "<th>Department</th>";
-                                echo "<th>Semister</th>";
                             }
                             if(isset($_POST['Teachers_List'])) {
                                 echo "<th>Ref_No</th>";
@@ -72,7 +71,6 @@
                                 echo "<th>Last_Name</th>";
                                 echo "<th>Email</th>";
                                 echo "<th>Department</th>";
-                                echo "<th>Subject</th>";
                             }
                         ?>
                     </tr>
@@ -91,7 +89,6 @@
                                     <td><?php echo $row['last_Name']; ?></td>
                                     <td><?php echo $row['Email']; ?></td>
                                     <td><?php echo $row['Department']; ?></td>
-                                    <td><?php echo $row['Semister']; ?></td>
                                 </tr>
                                 <?php
                                 }
@@ -109,7 +106,6 @@
                                     <td><?php echo $row['last_Name']; ?></td>
                                     <td><?php echo $row['Email']; ?></td>
                                     <td><?php echo $row['Department']; ?></td>
-                                    <td><?php echo $row['Subjects']; ?></td>
                                 </tr>
                                 <?php
                                 }

@@ -29,8 +29,11 @@
   <form action="" method="POST" autocomplete="off"> 
   
     <div class="container"> 
+      <marquee style="width: 50%;margin-bottom:30px;border-radius: 2px;" behavior="scroll" direction="left" scrollamount="9" bgcolor="#0000ff" onmouseover="this.stop();" onmouseout="this.start();">
+        <b style="color:white;font-weight: 750;">Use Your Official College Email Id for Login</b>
+      </marquee> <br>
 
-    <label><b>GR Number</b></label> 
+      <label><b>GR Number</b></label> 
       <input type="text" placeholder="Enter GR Number" name="S_Gr_No_check" required> <br>
 
       <label><b>Email</b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

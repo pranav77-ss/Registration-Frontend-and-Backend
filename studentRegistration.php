@@ -28,6 +28,9 @@
     <form action="" method="POST" autocomplete="off">
         <div class="container">
         
+        <marquee style="width: 50%;margin-bottom:30px;border-radius: 2px;" behavior="scroll" direction="left" scrollamount="9" bgcolor="#0000ff" onmouseover="this.stop();" onmouseout="this.start();">
+            <div style="color:white;font-weight: 750;">Use Your Official College Email Id for Registration</div>
+        </marquee> <br>
 
             <label><b>GR Number</b></label> &nbsp;&nbsp;&nbsp;
             <input type="text" placeholder="Enter GR Number" name="s_GR_No" required> <br>
@@ -47,22 +50,18 @@
             <label><b>Department</b></label> &nbsp;&nbsp;&nbsp;
             <select name="s_Department" required>
                 <option disabled selected>Choose your option</option>
-                <option value="Computer Science">Computer Science</option>
-                <option value="Information Technology">Information Technology</option>
-                <option value="Electronics">Electronics</option>
-            </select> <br>
 
-            <label><b>Semister</b></label> &nbsp;&nbsp;&nbsp;
-            <select name="s_Semister" required>
-                <option disabled selected>Choose your option</option>
-                <option value="FY Sem1">FY Sem-1</option>
-                <option value="FY Sem2">FY Sem-2</option>
-                <option value="SY Sem1">SY Sem-1</option>
-                <option value="SY Sem2">SY Sem-2</option>
-                <option value="TY Sem1">SY Sem-1</option>
-                <option value="TY Sem2">SY Sem-2</option>
-                <option value="FINAL Year Sem1">FINAL Year Sem-1</option>
-                <option value="FINAL Year Sem2">FINAL Year Sem-2</option>
+                <?php
+                $result = getBranches();
+                if($result) {
+                while($row = mysqli_fetch_assoc($result)) { 
+                    $branch_name = $row['branch_Name'];
+                    ?>
+                <option value='<?php echo $branch_name;?>'><?php echo $row['branch_Name'];?></option>
+            <?php
+                }
+            }
+            ?>
             </select> <br>
 
             <label><b>Password</b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -74,7 +73,6 @@
             <br>
 
             <button name="s_register">Register</button>
-
 
         </div>
     </form>

@@ -28,6 +28,10 @@
     <form action="" method="POST" autocomplete="off">
         <div class="container">
 
+            <marquee style="width: 50%;margin-bottom:30px;border-radius: 2px;" behavior="scroll" direction="left" scrollamount="9" bgcolor="#0000ff" onmouseover="this.stop();" onmouseout="this.start();">
+                <b style="color:white;font-weight: 750;">Use Your Official College Email Id for Registration</b>
+            </marquee> <br>
+
             <label><b>Ref ID</b></label> &nbsp;&nbsp;&nbsp;
             <input type="text" placeholder="Enter Reference Id" name="t_Ref_Id" required> <br>
 

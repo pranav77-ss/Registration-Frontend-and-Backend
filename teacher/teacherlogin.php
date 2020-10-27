@@ -28,6 +28,11 @@
   <form action="" method="POST" autocomplete="off">
   
     <div class="container"> 
+
+        <marquee style="width: 50%;margin-bottom:30px;border-radius: 2px;" behavior="scroll" direction="left" scrollamount="9" bgcolor="#0000ff" onmouseover="this.stop();" onmouseout="this.start();">
+          <b style="color:white;font-weight: 750;">Use Your Official College Email Id for Login</b>
+        </marquee> <br>
+        
         <label><b>Ref No</b></label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="text" placeholder="Enter Username" name="T_Ref_No_check" required> <br>
 

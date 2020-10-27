@@ -1,0 +1,57 @@
+.buttons {
+    text-align: center;
+    margin-top: 30px
+  }
+  .getdata {
+    margin-top: 30px;
+    background-color: rgb(0, 0, 125);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border: none; 
+    cursor: pointer;
+    width: 23%;
+  }
+  .Profile_Strength {
+    margin: 20px 30px; 
+    text-align: center;
+}
+
+input[type=text], 
+input[type=password],
+    select { 
+      width: 40%;
+      padding: 8px 15px; 
+      margin: 9px 0; 
+      display: inline-block; 
+      border: 1px solid rgb(160, 160, 160); 
+      box-sizing: border-box; 
+  } 
+label {
+  font-size: 0.91em;
+}
+.form {
+  text-align: center;
+  margin: 30px 10%; 
+  margin-bottom: 50px;
+  padding: 0px;
+}
+.confirm { 
+    background-color: rgb(0, 0, 125); 
+    color: white; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    border: none; 
+    cursor: pointer;
+    width: 25%;
+}     
+.confirm:hover { 
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.name_col {
+    margin-top: 2px;
+}
+#personal-data {
+  height: 800px;
+}
